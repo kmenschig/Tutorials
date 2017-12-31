@@ -1,3 +1,6 @@
 # This project contains multiple .md files with various tutorials
 
-### Openfoam [../ofTutorial.md]
+### Tutorials
+
+1. [OpenFoam](../openfoam/openfoam.md)
+2. [Github](../github/github.md)
