@@ -2,5 +2,5 @@
 
 ### Tutorials
 
-1. [OpenFoam](../openfoam/openfoam.md)
+1. [OpenFoam](openfoam/openfoam.md)
 2. [Github](../github/github.md)
