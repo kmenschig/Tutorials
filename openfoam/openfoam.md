@@ -10,7 +10,9 @@ Processing in parallel:
 
 decomposePar (-force) in scotch mode
 
+```
 mpirun -np 4 interFoam – parallel
+```
 
 After the CFD results are captured in *.jpg files like U.jpg, the pictures can be summarized in a mpg file like U.mpg and played with mplayer:
 
