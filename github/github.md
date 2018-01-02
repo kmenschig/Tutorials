@@ -1,9 +1,11 @@
-# Github
+#### Github Commands
 
-```git status
+```
+git status
 
-```git add .
+git add .
 
-```git commit -m "header change"
+git commit -m "header change"
 
-```git push
+git push
+```
