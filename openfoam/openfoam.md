@@ -20,8 +20,10 @@ mpirun -np 4 interFoam – parallel > log00 &
 
 After the CFD results are captured in *.jpg files like U.jpg, the pictures can be summarized in a mpg file like U.mpg and played with mplayer:
 
+```
 mencoder "mf://*.jpg" -mf fps=2 -o U.mpg -ovc lavc -lavcopts vcodec=mpeg4:autoaspect
 mplayer -loop 0 U.mpg
+```
 
 Showing only the blockMesh in paraFoam before the simulation is run:
 
