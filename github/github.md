@@ -1,7 +1,8 @@
 #### Github Commands
 
 Establish a repository on www.github.com
-Copy the link to the repository and FOAM_RUN
+
+Copy the link to the repository
 ```
 git clone <link>
 ```
