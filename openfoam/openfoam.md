@@ -10,9 +10,8 @@ Processing in parallel:
 
 decomposePar (-force) in scotch mode
 
-```
 Execution with progress stored in log00 file:
-
+'''
 mpirun -np 4 interFoam – parallel > log00 &
 ```
 
