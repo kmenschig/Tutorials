@@ -9,10 +9,10 @@ in terminal.
 
 
 ### Processing in Parallel:
-
+```
 decomposePar (-force) in scotch mode
-
-Solver execution with progress stored in log00 file:
+```
+Solver execution with 4 processors with progress stored in log00 file:
 
 ```
 mpirun -np 4 interFoam – parallel > log00 &
