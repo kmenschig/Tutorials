@@ -8,7 +8,7 @@ touch $FOAM_RUN/<case>/<case>.OpenFOAM
 in terminal.
 
 
-# **Processing in parallel:**
+## Processing in parallel:
 
 decomposePar (-force) in scotch mode
 
