@@ -1,8 +1,8 @@
-Parallel visualization of two cases:
+**Parallel Visualization of Two Cases:**
 Create paraview case file by typing
-
+```
 touch $FOAM_RUN/<case>/<case>.OpenFOAM
-
+```
 in terminal.
 
 
