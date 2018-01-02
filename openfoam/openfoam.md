@@ -34,11 +34,11 @@ Rescale stl files (from mm to m):
 surfaceTransformPoints -scale '(0.001 0.001 0.001)' input_mm.stl output_m.stl
 ```
 Check Mesh Quality:
-
+```
 checkMesh -allGeometry -allTopology
-
+```
 Check stl file quality
-
+```
 surface
-
+```
 m4 blockMeshDict.m4 > blockMeshDict
