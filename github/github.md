@@ -1,5 +1,7 @@
 #### Github Commands
 
+For changes on the local machine:
+
 ```
 git status
 
