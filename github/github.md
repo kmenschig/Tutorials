@@ -18,3 +18,9 @@ git commit -m "header change"
 
 git push
 ```
+
+To get all commit information:
+
+```
+git log
+```
