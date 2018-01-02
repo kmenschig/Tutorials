@@ -1,4 +1,4 @@
-### Parallel Visualization of Two Cases:
+#### Parallel Visualization of Two Cases:
 
 Create paraview case file by typing:
 
@@ -8,7 +8,7 @@ touch $FOAM_RUN/<case>/<case>.OpenFOAM
 in terminal.
 
 
-### Processing in Parallel:
+#### Processing in Parallel:
 ```
 decomposePar (-force) in scotch mode
 ```
@@ -29,11 +29,11 @@ Showing only the blockMesh in paraFoam before the simulation is run:
 ```
 paraFoam -block
 ```
-Rescale stl files (from mm to m):
+#### Rescale stl files (from mm to m):
 ```
 surfaceTransformPoints -scale '(0.001 0.001 0.001)' input_mm.stl output_m.stl
 ```
-Check Mesh Quality:
+#### Check Mesh Quality:
 ```
 checkMesh -allGeometry -allTopology
 ```
