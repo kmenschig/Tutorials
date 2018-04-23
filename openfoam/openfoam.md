@@ -32,7 +32,6 @@ rm -r proce*
 
 #### Capturing Fluid Flow in 'mpg' File Format:
 
-```
 After the CFD results are captured in \*.jpg files like U.jpg, the pictures can be summarized in a mpg file like U.mpg and played with mplayer:
 
 ```
