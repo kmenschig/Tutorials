@@ -81,13 +81,16 @@ cp -r constant/polyMesh 0/
 surfaceFeatureExtract
 ```
 ```
-snappyHexMesh -overwrite
+snappyHexMesh
 ```
 ```
-createBaffles -overwrite
+createBaffles
 ```
 ```
-mergeOrSplitBaffles -split -overwrite
+mergeOrSplitBaffles -split
+```
+```
+cp -r <latestTimeFolder>/polyMesh constant/
 ```
 
 
