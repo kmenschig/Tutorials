@@ -76,9 +76,12 @@ m4 blockMeshDict.m4 > blockMeshDict
 
 Make sure that the case has only 0.org and constant/polyMesh and 
 constant/extendedFeatureEdgeMesh are deleted. The folder constant should only
-contain the triSurface folder and the properties files.
+contain the triSurface folder and the properties files. Do not use the overwrite
+option. Also, make sure that the time steps in controlDict are long enough to
+be able to observe the movement of the mesh. 
 
 ```
+rm -r 0
 rm -r constant/polyMesh
 rm -r constant/extendedFeatureEdgeMesh
 ```
