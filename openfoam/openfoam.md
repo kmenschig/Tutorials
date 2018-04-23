@@ -74,10 +74,14 @@ m4 blockMeshDict.m4 > blockMeshDict
 
 #### Procedure to create mesh file with AMI and to check for AMI properties
 
-Make sure that the case has only 0.org and constant/polymesh and 
+Make sure that the case has only 0.org and constant/polyMesh and 
 constant/extendedFeatureEdgeMesh are deleted. The folder constant should only
 contain the triSurface folder and the properties files.
 
+```
+rm -r constant/polyMesh
+rm -r constant/extendedFeatureEdgeMesh
+```
 ```
 blockMesh
 ```
@@ -103,7 +107,7 @@ mergeOrSplitBaffles -split
 cp -r <latestTimeFolder>/polyMesh constant/
 ```
 ```
-checkAMI
+moveDynamicMesh -checkAMI
 ```
 
 
