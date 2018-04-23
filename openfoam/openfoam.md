@@ -24,6 +24,11 @@ Reconstruction into time files is done by
 ```
 reconstructPar
 ```
+Delete the Processor Files by
+
+```
+rm -r proce*
+```
 
 #### Capturing Fluid Flow in 'mpg' File Format:
 
