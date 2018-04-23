@@ -72,6 +72,12 @@ contain the triSurface folder and the properties files.
 blockMesh
 ```
 ```
+mkdir 0
+```
+```
+cp -r constant/polyMesh 0/
+```
+```
 surfaceFeatureExtract
 ```
 ```
