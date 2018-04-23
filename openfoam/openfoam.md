@@ -62,7 +62,7 @@ surfaceCheck <name>.stl
 ```
 m4 blockMeshDict.m4 > blockMeshDict
 
-#### Procedure to check AMI movement
+#### Procedure to create mesh file with AMI and to check for AMI properties
 
 Make sure that the case has only 0.org and constant/polymesh and 
 constant/extendedFeatureEdgeMesh are deleted. The folder constant should only
@@ -91,6 +91,9 @@ mergeOrSplitBaffles -split
 ```
 ```
 cp -r <latestTimeFolder>/polyMesh constant/
+```
+```
+checkAMI
 ```
 
 
