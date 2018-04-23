@@ -77,4 +77,11 @@ surfaceFeatureExtract
 ```
 snappyHexMesh -overwrite
 ```
+```
+createBaffles -overwrite
+```
+```
+mergeOrSplitBaffles -split -overwrite
+```
+
 
