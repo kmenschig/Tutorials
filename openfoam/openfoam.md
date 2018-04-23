@@ -57,9 +57,19 @@ checkMesh -allGeometry -allTopology
 ```
 #### Check stl file quality
 
+Do this if you want to test whether you have a leak free surface file. Add all
+regional files into one file by e.g.
+
+```
+cat <*>.stl >> <name>.stl 
+```
+
+Check surface by
+
 ```
 surfaceCheck <name>.stl
 ```
+
 m4 blockMeshDict.m4 > blockMeshDict
 
 #### Procedure to create mesh file with AMI and to check for AMI properties
