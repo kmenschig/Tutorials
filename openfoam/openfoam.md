@@ -18,7 +18,11 @@ Solver execution with 4 processors with progress stored in log00 file:
 ```
 mpirun -np 4 interFoam – parallel > log00 &
 ```
+reconstructPar
 
+#### Capturing Fluid Flow in 'mpg' File Format:
+
+```
 After the CFD results are captured in \*.jpg files like U.jpg, the pictures can be summarized in a mpg file like U.mpg and played with mplayer:
 
 ```
@@ -32,7 +36,7 @@ paraFoam -block
 ```
 #### Rescale stl files (from mm to m):
 ```
-surfaceTransformPoints -scale '(0.001 0.001 0.001)' input_mm.stl output_m.stl
+surfaceTransformPoints -scale '(0.001 0.001 0.001)' input_m.stl output_m.stl
 ```
 #### Check Mesh Quality:
 ```
@@ -40,6 +44,6 @@ checkMesh -allGeometry -allTopology
 ```
 #### Check stl file quality
 ```
-surface
+surfaceCheck <name>.stl
 ```
 m4 blockMeshDict.m4 > blockMeshDict
