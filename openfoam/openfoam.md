@@ -18,7 +18,12 @@ Solver execution with 4 processors with progress stored in log00 file:
 ```
 mpirun -np 4 interFoam – parallel > log00 &
 ```
+
+Reconstruction into time files is done by
+
+```
 reconstructPar
+```
 
 #### Capturing Fluid Flow in 'mpg' File Format:
 
