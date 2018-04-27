@@ -1,9 +1,16 @@
 #### Connect to Amazon Web Services
 
+Open .ssh directory which contains the ec2.pem key
+
 ```
 cd .ssh
+```
+Connect to AWS terminal
+
+```
 ssh -i ec2.pem ubuntu@xx.xx.xxx.xx
 ```
+
 Copy file from computer to AWS
 
 ```
