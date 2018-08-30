@@ -9,6 +9,12 @@ in terminal.
 
 
 #### snappyHexMesh - Processing in Parallel:
+```
+No need for a 0 directory yet. Dependent on the number of actions by snappyHexMesh,
+one will get upto 3 time folders, first time folder for castellation, second 
+time folder for snapping and third time folder for additional layers.
+```
+blockMesh
 
 ```
 decomposePar (-force) in scotch mode
@@ -21,7 +27,9 @@ mpirun -np 4 snappyHexMesh – parallel > logSHM &
 Reconstruction into time files is done by
 
 ```
-reconstructParMesh -time 1
+reconstructParMesh -time 'last time folder'
+```
+cp -r 'last time folder'/polyMesh constant/
 
 ```
 Delete the Processor Files by
