@@ -8,6 +8,28 @@ touch $FOAM_RUN/<case>/<case>.OpenFOAM
 in terminal.
 
 
+#### snappyHexMesh - Processing in Parallel:
+
+```
+decomposePar (-force) in scotch mode
+```
+Solver execution with 4 processors with progress stored in logSHM file:
+
+```
+mpirun -np 4 snappyHexMesh – parallel > logSHM &
+```
+Reconstruction into time files is done by
+
+```
+reconstructParMesh -time 1
+
+```
+Delete the Processor Files by
+
+```
+rm -r proce*
+```
+
 #### Processing in Parallel:
 
 ```
@@ -36,8 +58,8 @@ After the CFD results are captured in \*.jpg files like U.jpg, the pictures
 can be summarized in a mpg file like U.mpg and played with mplayer:
 
 ```
-mencoder "mf://*.jpg" -mf fps=2 -o U.mpg -ovc lavc -lavcopts vcodec=mpeg4:autoaspect
-mplayer -loop 0 U.mpg
+mencoder "mf://*.jpg" -mf fps=2 -o crossSectionZ.mpg -ovc lavc -lavcopts vcodec=mpeg4:autoaspect
+mplayer -loop 0 crossSectionZ.mpg
 ```
 
 Showing only the blockMesh in paraFoam before the simulation is run:
