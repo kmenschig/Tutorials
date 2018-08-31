@@ -5,6 +5,7 @@ Create paraview case file by typing:
 ```
 touch $FOAM_RUN/<case>/<case>.OpenFOAM
 ```
+
 in terminal.
 
 
@@ -12,19 +13,24 @@ in terminal.
 
 No need for a 0 directory yet. Dependent on the number of actions by snappyHexMesh,
 one will get upto 3 time folders, first time folder for 'castellatedMesh', second 
-time folder for 'snap' and third time folder for 'addLayers'.
+time folder for 'snap' and third time folder for 'addLayers'. Run blockMesh first.
 
 ```
 blockMesh
+```
+decompose your mesh with decomposePar; make sure you assigned the right number
+of processors:
 
 ```
 decomposePar (-force) in scotch mode
 ```
-Solver execution with 4 processors with progress stored in logSHM file:
+
+Solver execution in parallel with 4 processors with progress stored in logSHM file:
 
 ```
 mpirun -np 4 snappyHexMesh – parallel > logSHM &
 ```
+
 Reconstruction into time files is done by
 
 ```
