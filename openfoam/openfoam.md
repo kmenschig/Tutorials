@@ -9,10 +9,11 @@ in terminal.
 
 
 #### snappyHexMesh - Processing in Parallel:
-```
+
 No need for a 0 directory yet. Dependent on the number of actions by snappyHexMesh,
-one will get upto 3 time folders, first time folder for castellation, second 
-time folder for snapping and third time folder for additional layers.
+one will get upto 3 time folders, first time folder for 'castellatedMesh', second 
+time folder for 'snap' and third time folder for 'addLayers'.
+
 ```
 blockMesh
 
