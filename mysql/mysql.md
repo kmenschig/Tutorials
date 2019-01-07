@@ -1,6 +1,9 @@
-'''
+```
+Installation in Ubuntu 18.04
+```
+
 sudo apt install mysql-server
-'''
+
 sudo mysql_secure_installation
 
 y
@@ -21,6 +24,9 @@ y -> to remove test database
 
 y -> to reload privilege tables
 
+```
+If problems with password recognition, like getting error 1698
+```
 
 sudo mysql -u root
 
