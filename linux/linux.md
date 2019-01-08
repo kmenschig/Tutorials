@@ -20,3 +20,9 @@ find / -name 'search.txt' printf '%TD %TT %p\n'
 find * -name '*.py' printf '%TD %TT %p\n'
 ```
 
+##### Write list of files into a text file
+
+```
+ls *.csv > list.txt
+```
+
