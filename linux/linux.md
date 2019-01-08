@@ -1,5 +1,5 @@
 
-### Finding folders or files
+#### Finding folders or files
 
 ##### To find the file file.txt from the root directory upwards
 
