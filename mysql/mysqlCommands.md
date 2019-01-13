@@ -8,6 +8,8 @@ show tables;
 
 show columns from groceries;
 
+rename table groceries to tblGroceries;
+
 alter table groceries add column price float;
 
 alter table groceries modify column datum date after id;
