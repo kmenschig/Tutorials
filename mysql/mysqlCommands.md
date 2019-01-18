@@ -24,3 +24,11 @@ select * from groceries where item like 'Yoghurt%';
 
 select * from groceries where price > 10;
 
+create table tblStores
+(store_id int auto_increment primary key,
+store varchar(20),
+street varchar(50),
+city varchar(20),
+zip int);
+
+select * from tblGroceries, tblStores where tblGroceries.store_id=tblStores.store_id;
