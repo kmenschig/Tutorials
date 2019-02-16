@@ -22,9 +22,13 @@ select * from groceries;
 
 select * from groceries where item = 'Apple';
 
+select * from tblGroceries where item like 'Salad%';
+
 select * from groceries where item like 'Yoghurt%';
 
 select * from groceries where price > 10;
+
+select * from tblGroceries order by purchase_date desc;
 
 create table tblStores
 (store_id int auto_increment primary key,
