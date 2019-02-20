@@ -28,6 +28,8 @@ select * from groceries where item like 'Yoghurt%';
 
 select * from groceries where price > 10;
 
+select purchase_date, sum(price) as total_cost from tblGroceries where store_id=1 group by purchase_date;
+
 select * from tblGroceries order by purchase_date desc;
 
 create table tblStores
