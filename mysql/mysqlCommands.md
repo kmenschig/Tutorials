@@ -30,6 +30,11 @@ select * from groceries where price > 10;
 
 select purchase_date, sum(price) as total_cost from tblGroceries where store_id=1 group by purchase_date;
 
+select store_id, sum(price) as total_cost from tblGroceries where date_format(purchase_date,'%Y%m') =  
+date_format(subdate(curdate(),interval 1 month), '%Y%m') group by store_id;
+
+select year(purchase_date), month(purchase_date), sum(price) from tblGroceries group by year(purchase_date), month(purchase_date);
+
 select * from tblGroceries order by purchase_date desc;
 
 create table tblStores
