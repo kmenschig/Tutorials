@@ -26,3 +26,8 @@ find * -name '*.py' printf '%TD %TT %p\n'
 ls *.csv > list.txt
 ```
 
+##### Replace text in certain lines of file
+
+```
+sed -i '44,64s/oldtext/newtext/g' <fileName.txt>
+```
