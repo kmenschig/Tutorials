@@ -26,16 +26,15 @@ find * -name '*.py' printf '%TD %TT %p\n'
 ls *.csv > list.txt
 ```
 
-<<<<<<< HEAD
 ##### Combine several pdf files into one
 
 ```
 pdftk IRS-2016-01.pdf IRS-2016-02.pdf output IRS-2016.pdf
 ```
-=======
-##### Replace text in certain lines of file
+
+##### Find file 'fvSolution' in folder tree with the exception of folder 'tutorials'
 
 ```
-sed -i '44,64s/oldtext/newtext/g' <fileName.txt>
+find . -path ./tutorials -prune -o -iname fvsolution
 ```
->>>>>>> 7995fd81709bfe3f5eea7fcdf37d71b7391e27cb
+
