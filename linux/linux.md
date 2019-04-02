@@ -26,3 +26,8 @@ find * -name '*.py' printf '%TD %TT %p\n'
 ls *.csv > list.txt
 ```
 
+##### Combine several pdf files into one
+
+```
+pdftk IRS-2016-01.pdf IRS-2016-02.pdf output IRS-2016.pdf
+```
