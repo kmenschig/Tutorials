@@ -1,3 +1,9 @@
+##### Mount other drives, like SSD
+
+```
+sudo mount /dev/sdb1 /media/klaus/SSD
+```
+
 
 #### Finding folders or files
 
