@@ -45,7 +45,7 @@ find . -path ./tutorials -prune -o -iname fvsolution
 ```
 
 #### Replace character in xth position of row with another character
-### Below example replace the character '.' in position 13 of line 56 to 87 in blockMeshDict with the character 'x'
+##### Below example replace the character '.' in position 13 of line 56 to 87 in blockMeshDict with the character 'x'
 
 ```
 sed -i '56,87s/^\(.\{13\}\)./\1x/' blockMeshDict
