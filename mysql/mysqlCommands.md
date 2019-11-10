@@ -37,6 +37,8 @@ select year(purchase_date), month(purchase_date), sum(price) from tblGroceries g
 
 select * from tblGroceries order by purchase_date desc;
 
+select sum(price) from tblExpenses;
+
 create table tblStores
 (store_id int auto_increment primary key,
 store varchar(20),
@@ -60,3 +62,11 @@ where Completion_Text<>"";
 select * from tblDocuments\G;
 
 pager less -SFX;    #to show a huge table organized in columns
+
+alter table tblInOut add column id int not null auto_increment PRIMARY KEY;
+
+alter table tblInOut change column id id int first;
+
+select *, format(miles/volume,3) from tblGas order by fill_date;
+
+select avg(miles/volume) as "value" from tblGas;
