@@ -70,3 +70,5 @@ alter table tblInOut change column id id int first;
 select *, format(miles/volume,3) from tblGas order by fill_date;
 
 select avg(miles/volume) as "value" from tblGas;
+
+show columns from tblGas;
