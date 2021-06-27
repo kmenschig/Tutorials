@@ -24,3 +24,9 @@ To get all commit information:
 ```
 git log
 ```
+
+Move to a new local machine (for the case that computer needs to be replaced because of age):
+
+```
+copy the git repository to the new computer
+```
